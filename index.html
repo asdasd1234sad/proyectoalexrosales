@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zona Gamer</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: #1a1a1a;
+            color: #ffffff;
+        }
+
+        header {
+            background: url('https://images.unsplash.com/photo-1606813902871-1d50f6ebc779?ixlib=rb-4.0.3&auto=format&fit=crop&w=1500&q=80') no-repeat center center/cover;
+            padding: 100px 20px;
+            text-align: center;
+            color: #fff;
+        }
+
+        header h1 {
+            font-size: 4rem;
+            margin: 0;
+            text-shadow: 2px 2px 5px #000;
+        }
+
+        nav {
+            background-color: #111;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            padding: 15px;
+        }
+
+        nav a {
+            color: #0f0;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            border-bottom: 2px solid #0f0;
+            margin-bottom: 10px;
+        }
+
+        .game-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .game-card {
+            background-color: #222;
+            border: 1px solid #333;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 10px #0f0;
+            transition: transform 0.2s;
+        }
+
+        .game-card:hover {
+            transform: scale(1.05);
+        }
+
+        .game-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .game-card .info {
+            padding: 15px;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #111;
+            color: #888;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Zona Gamer</h1>
+        <p>Tu lugar favorito para explorar el universo de los videojuegos</p>
+    </header>
+
+    <nav>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">reseñas</a></li>
+                <li><a href="servicios.html">juegos clasicos</a></li>
+                <li><a href="contacto.html">formulario</a></li>
+            </ul>
+        </nav>
+    </nav>
+
+    <div class="content">
+        <section>
+            <h2 class="section-title">Últimos Lanzamientos</h2>
+            <div class="game-grid">
+                <div class="game-card">
+                    <img src="./fotos/imagen2.jpeg" alt="" />
+                    <div class="info">
+                        <h3>Prelude Dark Pain</h3>
+                        <p>Prelude Dark Pain
+
+                            El lanzamiento de Prelude Dark Pain está programado para 2027 en PC, PS5, Switch y Xbox
+                            Series X. Además, el juego estará disponible en Acceso Anticipado en Steam en 2026
+
+                            GTA VI – 22 de noviembre 2025
+                            Final Fantasy XVII – 15 de octubre 2025
+                            Dragon Age 4 – 30 de septiembre 2025
+                        </p>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1174180/header.jpg"
+                        alt="Red Dead Redemption 2" />
+                    <div class="info">
+                        <h3>Red Dead Redemption 2</h3>
+                        <p>Una épica historia del viejo oeste con acción, drama y exploración sin límites.</p>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/271590/header.jpg" alt="GTA V" />
+                    <div class="info">
+                        <h3>GTA V</h3>
+                        <p>Explora Los Santos y vive una vida criminal llena de acción y caos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        &copy; 2025 Zona Gamer - Todos los derechos reservados.
+    </footer>
+</body>
+
+</html>
